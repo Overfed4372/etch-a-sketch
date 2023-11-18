@@ -4,6 +4,14 @@ function createOneToOneBox (scale) {
     box.setAttribute('class', 'one-to-one-box');
     return box;
 }
+function randomColor () {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i<6 ; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
 function createSketch (rowAndColumnNumber = 30) {
     //The sketch size is 480*480px
@@ -26,7 +34,7 @@ function createSketch (rowAndColumnNumber = 30) {
             // event.target.onmousedown = () => {mouseDown = true};
             // event.target.onmouseup = () => {mouseDown = false};
             // if (!mouseDown) return
-            event.target.classList.add('filled-button');
+            event.target.style.backgroundColor = randomColor();
         });
 
     }  ); 
