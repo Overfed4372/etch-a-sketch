@@ -1,10 +1,34 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
-.sixteen-to-16-box{
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    margin: 30px 0px;
+    align-self: center;
+}
+.second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 100px;
+}
+.second-row .change-grid {
+    margin-left: 100px;
+    flex: 0 0 auto;
+    font-size: 20px;
+    font-weight: 800;
+    border: 2px solid white;
+    padding: 4px 32px;
+    border-radius: 8px;
+}
+.sketch{
+    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
@@ -14,4 +38,10 @@ body {
     height: 480px;
     border: 2px solid #7d7d7d;
 
+}
+.filled-button {
+    background-color: black;
+}
+.unfilled-button {
+    background-color: transparent;
 }
