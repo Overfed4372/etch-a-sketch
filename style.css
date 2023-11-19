@@ -3,9 +3,9 @@ body {
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
+    font-family: 'Courier New', Courier, monospace;
 }
 .title {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 32px;
     margin: 30px 0px;
     align-self: center;
@@ -18,8 +18,18 @@ body {
     flex-wrap: wrap;
     column-gap: 100px;
 }
-.second-row .change-grid {
+.second-row .change-grid-and-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
     margin-left: 100px;
+}
+.second-row .change-grid-and-show .show-grid{
+    font-size: 24px;
+}
+.second-row button {
     flex: 0 0 auto;
     font-size: 20px;
     font-weight: 800;
